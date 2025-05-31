@@ -63,15 +63,10 @@ function removeItem(itemName) {
 
 function checkItem(itemName) {
     const item = items.find((item) => item.name === itemName)
-
-    // if (item.checked) {
-    //      item.checked = false
-    //} else {
-    //      item checked = true
-    //}
-
-    // item checked ? item.checked = false : item.checked = true
-
     item.checked = !item.checked
     showItensList()
+}
+
+function addHideWarningClass() {
+    document.querySelector(".warning").classList.add("hide-warning")
 }
